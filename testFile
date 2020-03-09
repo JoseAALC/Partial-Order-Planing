@@ -1,0 +1,659 @@
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(Roon9)
+Final(final)
+RESULTS:
+Robot(Roon9)
+</SUBPROBLEM>
+
+<OPERATOR>
+PRECONDICTIONS: Robot(x48)^Door(x48,x49)
+go(x48,x49)
+RESULTS: Robot(x49)^!Robot(x48)
+C: Robot(Roon9)
+</OPERATOR>
+
+<UNIFY>
+PRECONDICTIONS: Robot(x48)^Door(x48,x49)
+go(x48,x49)
+RESULTS: Robot(x49)^!Robot(x48)
+Robot(Roon9) 0 SneedId: 1
+Robot(x49) 2
+</UNIFY>
+
+STEPS: 3
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(x48)^Door(x48,Roon9)
+go(x48,Roon9)
+RESULTS: Robot(Roon9)^!Robot(x48)
+Robot(x48)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x48)^Door(x48,Roon9)
+go(x48,Roon9)
+RESULTS: Robot(Roon9)^!Robot(x48)
+	</Sneed>
+C: Robot(x48)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Robot(x48) 48 SneedId: 2
+Robot(Roon1) 0
+</UNIFY>
+
+STEPS: 3
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(Roon1)^Door(Roon1,Roon9)
+go(Roon1,Roon9)
+RESULTS: Robot(Roon9)^!Robot(Roon1)
+Door(Roon1,Roon9)
+</SUBPROBLEM>
+
+backtrack1
+BACKTRACK: C_UNIFY
+
+BACKTRACK: C_ASSOCIATE
+
+<OPERATOR>
+PRECONDICTIONS: Robot(x50)^Door(x50,x51)
+go(x50,x51)
+RESULTS: Robot(x51)^!Robot(x50)
+C: Robot(x48)
+</OPERATOR>
+
+<UNIFY>
+PRECONDICTIONS: Robot(x50)^Door(x50,x51)
+go(x50,x51)
+RESULTS: Robot(x51)^!Robot(x50)
+Robot(x48) 48 SneedId: 2
+Robot(x51) 3
+</UNIFY>
+
+STEPS: 4
+
+BACKTRACK END
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(x48)^Door(x48,Roon9)
+go(x48,Roon9)
+RESULTS: Robot(Roon9)^!Robot(x48)
+Door(x48,Roon9)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x48)^Door(x48,Roon9)
+go(x48,Roon9)
+RESULTS: Robot(Roon9)^!Robot(x48)
+	</Sneed>
+C: Door(x48,Roon9)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x48,Roon9) 48 SneedId: 2
+Door(Roon1,Roon2) 0
+</UNIFY>
+
+STEPS: 4
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x48,Roon9) 48 SneedId: 2
+Door(Roon2,Roon1) 0
+</UNIFY>
+
+STEPS: 4
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x48,Roon9) 48 SneedId: 2
+Door(Roon2,Roon4) 0
+</UNIFY>
+
+STEPS: 4
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x48,Roon9) 48 SneedId: 2
+Door(Roon4,Roon2) 0
+</UNIFY>
+
+STEPS: 4
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x48,Roon9) 48 SneedId: 2
+Door(Roon4,Roon6) 0
+</UNIFY>
+
+STEPS: 4
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x48,Roon9) 48 SneedId: 2
+Door(Roon6,Roon4) 0
+</UNIFY>
+
+STEPS: 4
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x48,Roon9) 48 SneedId: 2
+Door(Roon6,Roon9) 0
+</UNIFY>
+
+STEPS: 4
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(x50)^Door(x50,Roon6)
+go(x50,Roon6)
+RESULTS: Robot(Roon6)^!Robot(x50)
+Robot(x50)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x50)^Door(x50,Roon6)
+go(x50,Roon6)
+RESULTS: Robot(Roon6)^!Robot(x50)
+	</Sneed>
+C: Robot(x50)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Robot(x50) 50 SneedId: 3
+Robot(Roon1) 0
+</UNIFY>
+
+STEPS: 4
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(Roon1)^Door(Roon1,Roon6)
+go(Roon1,Roon6)
+RESULTS: Robot(Roon6)^!Robot(Roon1)
+Door(Roon1,Roon6)
+</SUBPROBLEM>
+
+backtrack1
+BACKTRACK: C_UNIFY
+
+BACKTRACK: C_ASSOCIATE
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x50)^Door(x50,Roon6)
+go(x50,Roon6)
+RESULTS: Robot(Roon6)^!Robot(x50)
+	</Sneed>
+C: Robot(x50)
+PRECONDICTIONS: Robot(Roon6)^Door(Roon6,Roon9)
+go(Roon6,Roon9)
+RESULTS: Robot(Roon9)^!Robot(Roon6)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS: Robot(Roon6)^Door(Roon6,Roon9)
+go(Roon6,Roon9)
+RESULTS: Robot(Roon9)^!Robot(Roon6)
+Robot(x50) 50 SneedId: 3
+Robot(Roon9) 2
+</UNIFY>
+
+STEPS: 4
+
+BACKTRACK: C_UNIFY
+
+<UNIFY>
+PRECONDICTIONS: Robot(x48)^Door(x48,x49)
+go(x48,x49)
+RESULTS: Robot(x49)^!Robot(x48)
+Robot(x50) 50 SneedId: 3
+!Robot(x48) 2
+</UNIFY>
+
+STEPS: 4
+HERE2
+BACKTRACK: C_ASSOCIATE
+
+<OPERATOR>
+PRECONDICTIONS: Robot(x52)^Door(x52,x53)
+go(x52,x53)
+RESULTS: Robot(x53)^!Robot(x52)
+C: Robot(x50)
+</OPERATOR>
+
+<UNIFY>
+PRECONDICTIONS: Robot(x52)^Door(x52,x53)
+go(x52,x53)
+RESULTS: Robot(x53)^!Robot(x52)
+Robot(x50) 50 SneedId: 3
+Robot(x53) 4
+</UNIFY>
+
+STEPS: 5
+
+BACKTRACK END
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(x50)^Door(x50,Roon6)
+go(x50,Roon6)
+RESULTS: Robot(Roon6)^!Robot(x50)
+Door(x50,Roon6)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x50)^Door(x50,Roon6)
+go(x50,Roon6)
+RESULTS: Robot(Roon6)^!Robot(x50)
+	</Sneed>
+C: Door(x50,Roon6)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x50,Roon6) 50 SneedId: 3
+Door(Roon1,Roon2) 0
+</UNIFY>
+
+STEPS: 5
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x50,Roon6) 50 SneedId: 3
+Door(Roon2,Roon1) 0
+</UNIFY>
+
+STEPS: 5
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x50,Roon6) 50 SneedId: 3
+Door(Roon2,Roon4) 0
+</UNIFY>
+
+STEPS: 5
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x50,Roon6) 50 SneedId: 3
+Door(Roon4,Roon2) 0
+</UNIFY>
+
+STEPS: 5
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x50,Roon6) 50 SneedId: 3
+Door(Roon4,Roon6) 0
+</UNIFY>
+
+STEPS: 5
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(x52)^Door(x52,Roon4)
+go(x52,Roon4)
+RESULTS: Robot(Roon4)^!Robot(x52)
+Robot(x52)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x52)^Door(x52,Roon4)
+go(x52,Roon4)
+RESULTS: Robot(Roon4)^!Robot(x52)
+	</Sneed>
+C: Robot(x52)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Robot(x52) 52 SneedId: 4
+Robot(Roon1) 0
+</UNIFY>
+
+STEPS: 5
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(Roon1)^Door(Roon1,Roon4)
+go(Roon1,Roon4)
+RESULTS: Robot(Roon4)^!Robot(Roon1)
+Door(Roon1,Roon4)
+</SUBPROBLEM>
+
+backtrack1
+BACKTRACK: C_UNIFY
+
+BACKTRACK: C_ASSOCIATE
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x52)^Door(x52,Roon4)
+go(x52,Roon4)
+RESULTS: Robot(Roon4)^!Robot(x52)
+	</Sneed>
+C: Robot(x52)
+PRECONDICTIONS: Robot(Roon6)^Door(Roon6,Roon9)
+go(Roon6,Roon9)
+RESULTS: Robot(Roon9)^!Robot(Roon6)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS: Robot(Roon6)^Door(Roon6,Roon9)
+go(Roon6,Roon9)
+RESULTS: Robot(Roon9)^!Robot(Roon6)
+Robot(x52) 52 SneedId: 4
+Robot(Roon9) 2
+</UNIFY>
+
+STEPS: 5
+
+BACKTRACK: C_UNIFY
+
+<UNIFY>
+PRECONDICTIONS: Robot(x48)^Door(x48,x49)
+go(x48,x49)
+RESULTS: Robot(x49)^!Robot(x48)
+Robot(x52) 52 SneedId: 4
+!Robot(x48) 2
+</UNIFY>
+
+STEPS: 5
+HERE2
+BACKTRACK: C_ASSOCIATE
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x52)^Door(x52,Roon4)
+go(x52,Roon4)
+RESULTS: Robot(Roon4)^!Robot(x52)
+	</Sneed>
+C: Robot(x52)
+PRECONDICTIONS: Robot(Roon4)^Door(Roon4,Roon6)
+go(Roon4,Roon6)
+RESULTS: Robot(Roon6)^!Robot(Roon4)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS: Robot(Roon4)^Door(Roon4,Roon6)
+go(Roon4,Roon6)
+RESULTS: Robot(Roon6)^!Robot(Roon4)
+Robot(x52) 52 SneedId: 4
+Robot(Roon6) 3
+</UNIFY>
+
+STEPS: 5
+
+BACKTRACK: C_UNIFY
+
+<UNIFY>
+PRECONDICTIONS: Robot(x50)^Door(x50,x51)
+go(x50,x51)
+RESULTS: Robot(x51)^!Robot(x50)
+Robot(x52) 52 SneedId: 4
+!Robot(x50) 3
+</UNIFY>
+
+STEPS: 5
+HERE2
+BACKTRACK: C_ASSOCIATE
+
+<OPERATOR>
+PRECONDICTIONS: Robot(x54)^Door(x54,x55)
+go(x54,x55)
+RESULTS: Robot(x55)^!Robot(x54)
+C: Robot(x52)
+</OPERATOR>
+
+<UNIFY>
+PRECONDICTIONS: Robot(x54)^Door(x54,x55)
+go(x54,x55)
+RESULTS: Robot(x55)^!Robot(x54)
+Robot(x52) 52 SneedId: 4
+Robot(x55) 5
+</UNIFY>
+
+STEPS: 6
+
+BACKTRACK END
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(x52)^Door(x52,Roon4)
+go(x52,Roon4)
+RESULTS: Robot(Roon4)^!Robot(x52)
+Door(x52,Roon4)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x52)^Door(x52,Roon4)
+go(x52,Roon4)
+RESULTS: Robot(Roon4)^!Robot(x52)
+	</Sneed>
+C: Door(x52,Roon4)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x52,Roon4) 52 SneedId: 4
+Door(Roon1,Roon2) 0
+</UNIFY>
+
+STEPS: 6
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x52,Roon4) 52 SneedId: 4
+Door(Roon2,Roon1) 0
+</UNIFY>
+
+STEPS: 6
+HERE2
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(x52,Roon4) 52 SneedId: 4
+Door(Roon2,Roon4) 0
+</UNIFY>
+
+STEPS: 6
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(x54)^Door(x54,Roon2)
+go(x54,Roon2)
+RESULTS: Robot(Roon2)^!Robot(x54)
+Robot(x54)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(x54)^Door(x54,Roon2)
+go(x54,Roon2)
+RESULTS: Robot(Roon2)^!Robot(x54)
+	</Sneed>
+C: Robot(x54)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Robot(x54) 54 SneedId: 5
+Robot(Roon1) 0
+</UNIFY>
+
+STEPS: 6
+
+
+next iteraction
+
+<SUBPROBLEM>
+PRECONDICTIONS: Robot(Roon1)^Door(Roon1,Roon2)
+go(Roon1,Roon2)
+RESULTS: Robot(Roon2)^!Robot(Roon1)
+Door(Roon1,Roon2)
+</SUBPROBLEM>
+
+<STEP>
+	<Sneed>
+PRECONDICTIONS: Robot(Roon1)^Door(Roon1,Roon2)
+go(Roon1,Roon2)
+RESULTS: Robot(Roon2)^!Robot(Roon1)
+	</Sneed>
+C: Door(Roon1,Roon2)
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+</STEP>
+
+<UNIFY>
+PRECONDICTIONS:
+Initial(initial)
+RESULTS: Robot(Roon1)^Door(Roon1,Roon2)^Door(Roon2,Roon1)^Door(Roon2,Roon4)^Door(Roon4,Roon2)^Door(Roon4,Roon6)^Door(Roon6,Roon4)^Door(Roon6,Roon9)^Door(Roon9,Roon6)^Door(Roon1,Roon3)^Door(Roon3,Roon1)^Door(Roon3,Roon5)^Door(Roon5,Roon3)^Door(Roon5,Roon6)^Door(Roon6,Roon5)^Door(Roon1,Roon7)^Door(Roon7,Roon1)^Door(Roon7,Roon5)^Door(Roon5,Roon7)^Door(Roon7,Roon8)^Door(Roon8,Roon7)^Door(Roon8,Roon9)^Door(Roon9,Roon8)
+Door(Roon1,Roon2) 54 SneedId: 5
+Door(Roon1,Roon2) 0
+</UNIFY>
+
+STEPS: 6
+
+
+next iteraction
+
+Initial(initial) 0
+
+go(Roon1,Roon2) 5
+
+go(Roon2,Roon4) 4
+
+go(Roon4,Roon6) 3
+
+go(Roon6,Roon9) 2
+
+Final(final) 1
+
+statisctics-----------
+backtrack times: 12
+numberOfSteps: 4
+
+
+go(Roon6,Roon9) 2
+Robot(Roon9)
+Final(final) 1
+
+go(Roon4,Roon6) 3
+Robot(Roon6)
+go(Roon6,Roon9) 2
+
+Initial(initial) 0
+Door(Roon6,Roon9)
+go(Roon6,Roon9) 2
+
+go(Roon2,Roon4) 4
+Robot(Roon4)
+go(Roon4,Roon6) 3
+
+Initial(initial) 0
+Door(Roon4,Roon6)
+go(Roon4,Roon6) 3
+
+go(Roon1,Roon2) 5
+Robot(Roon2)
+go(Roon2,Roon4) 4
+
+Initial(initial) 0
+Door(Roon2,Roon4)
+go(Roon2,Roon4) 4
+
+Initial(initial) 0
+Robot(Roon1)
+go(Roon1,Roon2) 5
+
+Initial(initial) 0
+Door(Roon1,Roon2)
+go(Roon1,Roon2) 5
+
+9
+RECORDS

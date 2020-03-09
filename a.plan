@@ -1,0 +1,11 @@
+
+
+ACTION:go(x,y)
+	PRECONDICTIONS : robot(x) ^ door(x,y)
+	RESULTS : robot(y) ^ !robot(x);   
+
+
+INITIAL: door(Roon1,Roon2) ^ robot(Roon1);
+FINAL : robot(Roon2);
+
+

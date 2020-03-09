@@ -1,0 +1,756 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vars",
+				"vars_database"
+			],
+			[
+				"var",
+				"vars_database"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"b",
+				"beginend\t$1.begin(), $1.end()"
+			],
+			[
+				"inc",
+				"inc\t#include \"…\""
+			],
+			[
+				"ge",
+				"getValue"
+			],
+			[
+				"Bi",
+				"Bindings"
+			],
+			[
+				"get",
+				"getReferenceNumber"
+			],
+			[
+				"bin",
+				"binds"
+			],
+			[
+				"re",
+				"removeBinding"
+			],
+			[
+				"bind",
+				"Bindings"
+			],
+			[
+				"Bin",
+				"Binding"
+			],
+			[
+				"Choice",
+				"ChoiceKind"
+			],
+			[
+				"INC",
+				"INCLUDES"
+			],
+			[
+				"User",
+				"UsersProxy"
+			],
+			[
+				"m",
+				"m_users"
+			],
+			[
+				"in",
+				"inc\t#include <…>"
+			],
+			[
+				"Mo",
+				"MonomialFactory"
+			],
+			[
+				"Co",
+				"MonomialConst"
+			],
+			[
+				"pr",
+				"protected"
+			],
+			[
+				"M",
+				"MonomialConst"
+			],
+			[
+				"ma",
+				"main\tmain()"
+			],
+			[
+				"d",
+				"def\t#ifndef … #define … #endif"
+			],
+			[
+				"i",
+				"if\tIf Condition"
+			],
+			[
+				"IN",
+				"Integer"
+			],
+			[
+				"In",
+				"Integer"
+			],
+			[
+				"de",
+				"depth"
+			],
+			[
+				"ps",
+				"push_back"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#ifndef BINDINGS_HPP\n#define BINDINGS_HPP\n\n#include \"Binding.hpp\"\n#include <vector>\n#include <unordered_set>\n\nusing namespace std;\n\n/**\n* saves an collection of bindings\n**/\nclass Bindings: public Copiable<Bindings>{\n\tpublic:\n\t\tBindings();\n                \n\t\t~Bindings();\n\t\t\n\n\t\t/**\n\t\t* create a new Binding and returns this index\n\t\t**/\n\t\tint getNewBinding(string value);\n\t\t/**\n\t\t* removes an reference to an Binding\n\t\t**/\n\t\tvoid removeBinding(int index);\n\t\t/**\n\t\t* adds one reference to one Binding\n\t\t**/\n\t\tvoid associateBinding(int index);\n\n\t\tstring getValue(int index);\n\t\t/**\n\t\t* makes an copy of this object\n\t\t**/\n\t\tBindings* copy() const override;\n\n        protected:\n        private:\n\t\t\t/**\n\t\t\t * \n\t\t\t */\n\t\t\tvector<Binding*> vars;\n\t\t\tvector<int> freeSpaces;\n\n\n\n\n};\n#endif",
+			"file": "/home/ze/Desktop/PlanningFinal/includes/Bindings.hpp",
+			"file_size": 771,
+			"file_write_time": 131365072195269667,
+			"settings":
+			{
+				"buffer_size": 776,
+				"line_ending": "Unix",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/home/ze/Desktop/PlanningFinal/includes/Predicate.hpp",
+			"settings":
+			{
+				"buffer_size": 2589,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/ze/Desktop/PlanningFinal/includes/Action.hpp",
+			"settings":
+			{
+				"buffer_size": 683,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Predicate.cpp",
+			"settings":
+			{
+				"buffer_size": 1640,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 92.0,
+		"last_filter": "Package Control: insta",
+		"selected_items":
+		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: is",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 620.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ze/.config/sublime-text-3/Packages/ClangAutoComplete/ClangAutoComplete.sublime-settings",
+		"/home/ze/.config/sublime-text-3/Packages/Git/Git.sublime-settings",
+		"/home/ze/.config/sublime-text-3/Packages/Emacs Pro Essentials/sublemacspro.sublime-settings",
+		"/home/ze/.config/sublime-text-3/Packages/User/Git.sublime-settings",
+		"/home/ze/Desktop/PlanningFinal/includes/Binding.hpp",
+		"/home/ze/Desktop/PlanningFinal/includes/Action.hpp",
+		"/home/ze/Desktop/PlanningFinal/src/Planning.sublime-project",
+		"/home/ze/.config/sublime-text-3/Packages/User/DoxyDoc.sublime-settings",
+		"/home/ze/.config/sublime-text-3/Packages/DoxyDoc/DoxyDoc.sublime-settings",
+		"/home/ze/Desktop/PlanningFinal/includes/ActionMaker.hpp",
+		"/home/ze/.config/sublime-text-3/Packages/Gherkin Auto-Complete Plus/Gherkin Auto-Complete Plus.sublime-settings",
+		"/home/ze/Desktop/PlanningFinal/src/Predicate.cpp",
+		"/home/ze/Desktop/PlanningFinal/includes/Bindings.hpp",
+		"/home/ze/Desktop/PlanningFinal/includes/State.hpp",
+		"/home/ze/Desktop/PlanningFinal/includes/RecordManager.hpp",
+		"/home/ze/.config/sublime-text-3/Packages/SublimeLinter/Default (Linux).sublime-keymap",
+		"/home/ze/Desktop/PlanningFinal/src/Binding.cpp",
+		"/home/ze/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/ze/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/ze/Desktop/PlanningFinal/includes/Predicate.hpp",
+		"/home/ze/Desktop/PlanningFinal/src/Bindings.cpp",
+		"/home/ze/.config/sublime-text-3/Packages/User/Gherkin Auto-Complete Plus.sublime-settings",
+		"/home/ze/.config/sublime-text-3/Packages/Emacs Pro Essentials/Default.sublime-keymap",
+		"/tmp/mozilla_ze0/composition.csv",
+		"/tmp/mozilla_ze0/yields.csv",
+		"/tmp/mozilla_ze0/revenue.csv",
+		"/tmp/mozilla_ze0/cost.csv",
+		"/tmp/mozilla_ze0/area-1.csv",
+		"/tmp/ark-Po0dEo/MAD1.m",
+		"/home/ze/Desktop/PlanningFinal/includes/Copiable.hpp",
+		"/home/ze/Desktop/PlanningFinal/makefile",
+		"/home/ze/Desktop/script/mkmakefile",
+		"/home/ze/Desktop/PlanningFinal/src/main.cpp",
+		"/home/ze/Desktop/PlanningFinal/tests/BindingsTest.cpp",
+		"/home/ze/Dropbox/Planning/headers/Predicate.hpp",
+		"/home/ze/Desktop/PlanningFinal/tests/BindingTest.cpp",
+		"/home/ze/Desktop/PlanningFinal/src/Copiable.cpp",
+		"/home/ze/Desktop/PlanningFinal/main.cpp",
+		"/home/ze/Desktop/PlanningFinal/includes/RecordFrame.hpp",
+		"/home/ze/Desktop/script/makefile",
+		"/home/ze/Desktop/script/tests/Testola.cpp",
+		"/home/ze/Desktop/script/src/main.cpp",
+		"/home/ze/Desktop/script/mkclasscpp",
+		"/home/ze/Desktop/script/Test",
+		"/home/ze/Desktop/script/TestPair.cpp",
+		"/home/ze/Desktop/script/main.cpp",
+		"/home/ze/Desktop/mkmakefile",
+		"/tmp/ark-QHuSEy/MADReport.pdf",
+		"/home/ze/Desktop/PlanningFinal/src/Choice.cpp",
+		"/home/ze/Desktop/PlanningFinal/includes/Choice.hpp",
+		"/usr/include/c++/6/cctype",
+		"/usr/include/assert.h",
+		"/usr/include/stdio.h",
+		"/usr/include/shadow.h",
+		"/usr/include/math.h",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/User.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/User.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/Users.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/UsersProxy.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/UsersProxy.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/UsersReal.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/UsersReal.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/Users.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/main.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/Admin.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/Admin.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/RegularUser.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Proxy/RegularUser.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/Compost.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/Box.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/Book.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/Book.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/Box.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/main.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/CD.hpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/CD.cpp",
+		"/home/ze/Desktop/C++Pattern/Structural/Composite/Compost.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/Monomial.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/Monomial.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/MonomialConst.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/MonomialConst.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/MonomialExp.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/MonomialFactory.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/MonomialFactory.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/MonomialExp.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/main.cpp",
+		"/home/ze/Desktop/MADEX/S1/1.mod",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/mkclasscpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Prototype/clonable.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/a.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/c.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Factory/c.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Singleton/main.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Prototype/Student.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Prototype/Student.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Singleton/Integer.cpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Singleton/Integer.hpp",
+		"/home/ze/Desktop/C++Pattern/Creational/Prototype/main.cpp",
+		"/home/ze/Desktop/tsp_dantzig.mod",
+		"/home/ze/Desktop/miller-tucker.m",
+		"/home/ze/Desktop/data.py",
+		"/home/ze/Desktop/test.py",
+		"/home/ze/Dropbox/Planning/headers/Action.hpp",
+		"/home/ze/Downloads/yields.csv",
+		"/home/ze/Downloads/create_dictionary.cpp",
+		"/home/ze/Desktop/mst.mod",
+		"/home/ze/Downloads/revenue.csv",
+		"/home/ze/Downloads/composition.csv",
+		"/home/ze/Downloads/cost.csv",
+		"/home/ze/Downloads/area.csv",
+		"/home/ze/Desktop/sol",
+		"/home/ze/Desktop/cycle_test.cpp",
+		"/home/ze/Desktop/read_tsplib.py",
+		"/home/ze/read_tsplib.py",
+		"/home/ze/Desktop/kruskal.m",
+		"/home/ze/Desktop/test",
+		"/etc/profile",
+		"/etc/profile.d/bash_completion.sh",
+		"/home/ze/Desktop/obj",
+		"/home/ze/Downloads/catwc.c",
+		"/home/ze/Desktop/a.cpp",
+		"/home/ze/Desktop/.bashrc",
+		"/home/ze/.bashrc",
+		"/home/ze/Desktop/tst.c"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"getReferenceNumber",
+			"([A-Z][a-z]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)",
+			"(W0[0-9])\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)\\s+([0-9]+\\.[0-9]+)",
+			"([A-Z][a-z]+)\\s+([0-9]+)\\s+([0-9]+)\\s+([0-9]+)\\s+([0-9]+)\\s+([0-9]+)\\s+([0-9]+)\\s+([0-9]+)",
+			"([A-Z][a-z]+) ",
+			"([A-Z][a-z]+)  ",
+			"\\s",
+			"([A-Z][a-z]+)\\s+([0-9]+)",
+			"([A-Z][a-z]+)\\s+([0-1]+)",
+			"\\\"[A-Z][a-z]+\\\"",
+			"([A-Z][a-z]+)",
+			"[A-Z][a-<",
+			"Alfrocheiro",
+			"([A-Z][a-z]+)",
+			"[A-Z][a-z]+",
+			"a-Z+",
+			"O",
+			"T",
+			"E",
+			"D",
+			"C",
+			"B",
+			"A"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"(\"\\1\",1,3):\\2,\\n(\"\\1\",2,3):\\3,\\n(\"\\1\",3,3):\\4,\\n(\"\\1\",4,3):\\5,\\n(\"\\1\",5,3):\\6,\\n(\"\\1\",6,3):\\7,\\n(\"\\1\",7,3):\\8,\\n(\"\\1\",8,3):\\9,\\n(\"\\1\",9,3):$10,\\n(\"\\1\",10,3):$11,",
+			"(\"\\1\",1,2):\\2,\\n(\"\\1\",2,2):\\3,\\n(\"\\1\",3,2):\\4,\\n(\"\\1\",4,2):\\5,\\n(\"\\1\",5,2):\\6,\\n(\"\\1\",6,2):\\7,\\n(\"\\1\",7,2):\\8,\\n(\"\\1\",8,2):\\9,\\n(\"\\1\",9,2):$10,\\n(\"\\1\",10,2):$11,",
+			"(\"\\1\",1,1):\\2,\\n(\"\\1\",2,1):\\3,\\n(\"\\1\",3,1):\\4,\\n(\"\\1\",4,1):\\5,\\n(\"\\1\",5,1):\\6,\\n(\"\\1\",6,1):\\7,\\n(\"\\1\",7,1):\\8,\\n(\"\\1\",8,1):\\9,\\n(\"\\1\",9,1):$10,\\n(\"\\1\",10,1):$11,",
+			"(\"\\1\",1,1):\\2,\\n(\"\\1\",2,1):\\3,\\n(\"\\1\",3,1):\\4,\\n(\"\\1\",4,1):\\5,\\n(\"\\1\",5,1):\\6,\\n(\"\\1\",6,1):\\7,\\n(\"\\1\",7,1):\\8,\\n(\"\\1\",8,1):\\9,\\n(\"\\1\",9,1):\\(10),\\n(\"\\1\",10,1):\\(11),",
+			"(\"\\1\",1,1):\\2,\\n(\"\\1\",2,1):\\3,\\n(\"\\1\",3,1):\\4,\\n(\"\\1\",4,1):\\5,\\n(\"\\1\",5,1):\\6,\\n(\"\\1\",6,1):\\7,\\n(\"\\1\",7,1):\\8,\\n(\"\\1\",8,1):\\9,\\n(\"\\1\",9,1):\\10,\\n(\"\\1\",10,1):\\11,",
+			"(\"\\1\",1):\\2,\\n(\"\\1\",2):\\3,\\n(\"\\1\",3):\\4,",
+			"(\"\\1\",\"W01\"):\\2,\\n(\"\\1\",\"W02\"):\\3,\\n(\"\\1\",\"W03\"):\\4,\\n(\"\\1\",\"W04\"):\\5,\\n(\"\\1\",\"W05\"):\\6,\\n(\"\\1\",\"W06\"):\\7,\\n(\"\\1\",\"W07\"):\\8,\\n",
+			"(\"\\1\",\"C1\"):\\2,\\n(\"\\1\",\"C2\"):\\3,\\n(\"\\1\",\"C3\"):\\4,\\n(\"\\1\",\"C4\"):\\5,\\n(\"\\1\",\"C5\"):\\6,\\n(\"\\1\",\"C6\"):\\7,\\n(\"\\1\",\"C7\"):\\8,\\n",
+			"(\"\\1\",\"C1\"):\\2\\n(\"\\1\",\"C2\"):\\3\\n(\"\\1\",\"C3\"):\\4\\n(\"\\1\",\"C4\"):\\5\\n(\"\\1\",\"C5\"):\\6\\n(\"\\1\",\"C6\"):\\7\\n(\"\\1\",\"C7\"):\\8\\n",
+			"\\n",
+			"\"\\1\":\\2,",
+			"\"\\1\":\\2",
+			"\"\\1\"",
+			"7",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/ze/Desktop/PlanningFinal/includes/Bindings.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 776,
+						"regions":
+						{
+							"_emacs_tabstops_tabs_now_spaces":
+							{
+								"flags": 144,
+								"regions":
+								[
+									[
+										218,
+										218
+									],
+									[
+										229,
+										229
+									],
+									[
+										240,
+										248
+									],
+									[
+										248,
+										256
+									],
+									[
+										259,
+										259
+									],
+									[
+										278,
+										278
+									],
+									[
+										284,
+										284
+									],
+									[
+										332,
+										332
+									],
+									[
+										338,
+										338
+									],
+									[
+										373,
+										373
+									],
+									[
+										379,
+										379
+									],
+									[
+										418,
+										418
+									],
+									[
+										424,
+										424
+									],
+									[
+										457,
+										457
+									],
+									[
+										463,
+										463
+									],
+									[
+										501,
+										501
+									],
+									[
+										507,
+										507
+									],
+									[
+										544,
+										544
+									],
+									[
+										574,
+										574
+									],
+									[
+										580,
+										580
+									],
+									[
+										613,
+										613
+									],
+									[
+										619,
+										619
+									],
+									[
+										653,
+										661
+									],
+									[
+										672,
+										680
+									],
+									[
+										709,
+										709
+									],
+									[
+										713,
+										713
+									],
+									[
+										739,
+										739
+									]
+								]
+							}
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"_emacs_tabstops_converted_to": "spaces",
+							"_emacs_tabstops_scratch_hack": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"touched": 1492034441.94,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/ze/Desktop/PlanningFinal/includes/Predicate.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2340,
+								2340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"touched": 1492035464.61,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/ze/Desktop/PlanningFinal/includes/Action.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"touched": 1492034712.1,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Predicate.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1084,
+								1129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"touched": 1492035499.49
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "Planning.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
