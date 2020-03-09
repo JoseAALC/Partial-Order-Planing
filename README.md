@@ -5,7 +5,7 @@ Project done as part of Bachelor's degree in the course of Introduction to Scien
 2016/2017
 
 ## Objective
-- Devlop an algorithm of partial order planing in C++ 
+- Program an algorithm of partial order planing in C++ 
 
 ## Brieve Description
 In this project we devlop a partial order planing algorithm with the objective of in future the could be used in webots (https://cyberbotics.com/). For this porpose we implement a representation of first order logic in C++ and a unification algorithm as the way to resolve the value of variables.
